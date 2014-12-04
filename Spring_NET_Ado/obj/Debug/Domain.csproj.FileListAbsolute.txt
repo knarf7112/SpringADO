@@ -1,0 +1,7 @@
+D:\git\Spring_NET_Ado\Spring_NET_Ado\bin\Debug\Spring_NET_Ado.pdb
+D:\git\Spring_NET_Ado\Spring_NET_Ado\bin\Debug\Spring.Data.dll
+D:\git\Spring_NET_Ado\Spring_NET_Ado\bin\Debug\Spring.Core.dll
+D:\git\Spring_NET_Ado\Spring_NET_Ado\obj\Debug\Spring_NET_Ado.pdb
+D:\git\Spring_NET_Ado\Spring_NET_Ado\bin\Debug\Spring_NET_Ado.dll
+D:\git\Spring_NET_Ado\Spring_NET_Ado\obj\Debug\Spring_NET_Ado.dll
+D:\git\Spring_NET_Ado\Spring_NET_Ado\obj\Debug\Domain.csprojResolveAssemblyReference.cache
