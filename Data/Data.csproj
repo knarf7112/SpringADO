@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="CustomerDAO.cs" />
     <Compile Include="IDAO.cs" />
+    <Compile Include="IDAO2.cs" />
+    <Compile Include="OrderDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

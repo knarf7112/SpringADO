@@ -8,3 +8,4 @@ D:\git\Spring_NET_Ado\Data\bin\Debug\Spring.Core.dll
 D:\git\Spring_NET_Ado\Data\bin\Debug\Spring.Data.dll
 D:\git\Spring_NET_Ado\Data\bin\Debug\Spring_NET_Ado.dll
 D:\git\Spring_NET_Ado\Data\bin\Debug\Spring_NET_Ado.pdb
+D:\git\Spring_NET_Ado\Data\bin\Debug\Spring.Aop.dll

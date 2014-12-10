@@ -1,24 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Data.Test.dll" total="6" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-12-04" time="17:03:19">
+<test-results name="D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Data.Test.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-12-10" time="15:18:55">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5483" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="P20200047" user="p20200047" user-domain="ICASH" />
   <culture-info current-culture="zh-TW" current-uiculture="zh-TW" />
-  <test-suite type="Assembly" name="D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Data.Test.dll" executed="True" result="Success" success="True" time="5.197" asserts="0">
+  <test-suite type="Assembly" name="D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Data.Test.dll" executed="True" result="Failure" success="False" time="1.939" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Data" executed="True" result="Success" success="True" time="5.179" asserts="0">
+      <test-suite type="Namespace" name="Data" executed="True" result="Failure" success="False" time="1.922" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="5.179" asserts="0">
+          <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="1.921" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Data" executed="True" result="Success" success="True" time="5.178" asserts="0">
+              <test-suite type="Namespace" name="Data" executed="True" result="Failure" success="False" time="1.921" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="TestCustomerDAO" executed="True" result="Success" success="True" time="5.176" asserts="0">
+                  <test-suite type="TestFixture" name="TestCustomerDAO" executed="True" result="Failure" success="False" time="1.919" asserts="0">
                     <results>
-                      <test-case name="Data.Test.Data.TestCustomerDAO.TestDelete" executed="True" result="Success" success="True" time="4.216" asserts="1" />
-                      <test-case name="Data.Test.Data.TestCustomerDAO.TestExist" executed="True" result="Success" success="True" time="0.025" asserts="6" />
-                      <test-case name="Data.Test.Data.TestCustomerDAO.TestFindAll" executed="True" result="Success" success="True" time="0.226" asserts="4" />
-                      <test-case name="Data.Test.Data.TestCustomerDAO.TestFindByPk" executed="True" result="Success" success="True" time="0.045" asserts="1" />
-                      <test-case name="Data.Test.Data.TestCustomerDAO.TestInsert" executed="True" result="Success" success="True" time="0.014" asserts="3" />
-                      <test-case name="Data.Test.Data.TestCustomerDAO.TestUpdate" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                      <test-case name="Data.Test.Data.TestCustomerDAO.TestInsert" executed="True" result="Error" success="False" time="1.535" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.Configuration.ConfigurationErrorsException : Error creating context 'spring.root': 指定的組件名稱或程式碼庫無效。 (發生例外狀況於 HRESULT: 0x80131047)
+  ----> Spring.Core.CannotLoadObjectTypeException : Cannot resolve type [Data.OrderDAO, Data, Data] for object with name 'orderDAO' defined in config [D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Data.Test.dll.config#spring/objects] line 1
+  ----> System.TypeLoadException : Could not load type from string value 'Data.OrderDAO, Data, Data'.
+  ----> System.IO.FileLoadException : 指定的組件名稱或程式碼庫無效。 (發生例外狀況於 HRESULT: 0x80131047)]]></message>
+                          <stack-trace><![CDATA[於 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+於 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+於 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+於 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+於 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+於 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+於 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+於 Spring.Util.ConfigurationUtils.GetSection(String sectionName)
+於 Spring.Context.Support.ContextRegistry.InitializeContextIfNeeded()
+於 Spring.Context.Support.ContextRegistry.GetContext()
+於 Data.Test.Data.TestCustomerDAO.InitContext() 於 d:\git\Spring_NET_Ado\Data.Test\Data\TestCustomerDAO.cs: 行 29
+--CannotLoadObjectTypeException
+於 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName)
+於 Spring.Objects.Factory.Support.DefaultListableObjectFactory.PreInstantiateSingletons()
+於 Spring.Context.Support.AbstractApplicationContext.Refresh()
+於 Spring.Context.Support.XmlApplicationContext..ctor(XmlApplicationContextArgs args)
+於 Spring.Context.Support.XmlApplicationContext..ctor(String name, Boolean caseSensitive, String[] configurationLocations)
+於 _dynamic_Spring.Context.Support.XmlApplicationContext..ctor(Object[] )
+於 Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments)
+於 Spring.Context.Support.ContextHandler.RootContextInstantiator.InvokeContextConstructor(ConstructorInfo ctor)
+於 Spring.Context.Support.ContextHandler.ContextInstantiator.InstantiateContext()
+於 Spring.Context.Support.ContextHandler.InstantiateContext(IApplicationContext parentContext, Object configContext, String contextName, Type contextType, Boolean caseSensitive, String[] resources)
+於 Spring.Context.Support.ContextHandler.Create(Object parent, Object configContext, XmlNode section)
+--TypeLoadException
+於 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName)
+於 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName)
+於 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName)
+於 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName)
+於 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType()
+於 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName)
+--FileLoadException
+於 System.Reflection.AssemblyName.nInit(RuntimeAssembly& assembly, Boolean forIntrospection, Boolean raiseResolveEvent)
+於 System.Reflection.AssemblyName.nInit()
+於 System.Reflection.Assembly.LoadWithPartialName(String partialName)
+於 Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo)
+於 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName)
+]]></stack-trace>
+                        </failure>
+                      </test-case>
                     </results>
                   </test-suite>
                 </results>

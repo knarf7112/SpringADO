@@ -11,7 +11,7 @@ namespace Spring_NET_Ado
     {
         static void Main()
         {
-            
+            //專案順序  Domain(create base object) => Data(create SQL) => Business(create Manager) => (Use Manager)UnitTest
             qoo q = new qoo() {  LastName = "last", QooName = "Qoo" };
             PropertyInfo[] pi = q.GetType().GetProperties();
 
@@ -38,5 +38,7 @@ namespace Spring_NET_Ado
         public String QooName { get; set; }
 
         public string LastName { get; set; }
+
+        public bool Check { get; set; }
     }
 }

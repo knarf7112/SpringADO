@@ -11,6 +11,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Test", "Data.Test\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlTest", "XmlTest\XmlTest.csproj", "{25EF44B0-F15B-491E-B99B-DE49D0400130}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{164FA982-4C37-414B-9CD3-B52B99A0CA4E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Common.Logging.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Common.Logging.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Common.Logging.Log4Net.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Common.Logging.Log4Net.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\log4net.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\log4net.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Mono.Security.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Mono.Security.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Npgsql.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Npgsql.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\nunit.framework.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\nunit.framework.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Oracle.DataAccess.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Oracle.DataAccess.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Spring.Aop.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Spring.Aop.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Spring.Core.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Spring.Core.dll
+		..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Spring.Data.dll = ..\..\新人訓練\ADO.NET02\SpringNet_Lesson2\lib\Spring.Data.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{0AF12E85-2755-4DA0-99F3-2CAF3119E983}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +49,10 @@ Global
 		{25EF44B0-F15B-491E-B99B-DE49D0400130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25EF44B0-F15B-491E-B99B-DE49D0400130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25EF44B0-F15B-491E-B99B-DE49D0400130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF12E85-2755-4DA0-99F3-2CAF3119E983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF12E85-2755-4DA0-99F3-2CAF3119E983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF12E85-2755-4DA0-99F3-2CAF3119E983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF12E85-2755-4DA0-99F3-2CAF3119E983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

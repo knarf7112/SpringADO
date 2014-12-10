@@ -10,8 +10,39 @@ namespace XmlTest
 {
     class Program
     {
+        
+        enum Test
+        {
+            OrderId , OrderDate, CustomerId
+        }
         static void Main(string[] args)
         {
+
+            //System.Collections.Specialized.NameValueCollection e = new System.Collections.Specialized.NameValueCollection();
+            //Spring.Data.Support.NullMappingDataReader d = new Spring.Data.Support.NullMappingDataReader();
+            //AdoTemplate.DataReaderWrapperType = Type.GetType("Spring.Data.Support.NullMappingDataReader");
+            //
+            try
+            {
+                int x = 1;
+                int y = 0;
+                int z = x / y;
+            }
+            catch
+            {
+                throw;
+            }
+            //--------------
+            Console.WriteLine(Test.CustomerId);
+            foreach (string ch in Enum.GetNames(typeof(Test)))
+            {
+                Console.WriteLine(ch.ToString());//確定列舉型別輸出的文字(列舉轉字串)
+            }
+            Test qoo;
+            var ss = Enum.TryParse<Test>("OrderId", false,out qoo);
+            Console.WriteLine(ss.ToString());
+            Console.ReadKey();
+            //-----------------------------------------------
             A a1 = new A() { a = "a", b = 1 };
             A a2 = new A() { a = "a", b = 1 };
             Console.WriteLine(a1.Equals(a2));

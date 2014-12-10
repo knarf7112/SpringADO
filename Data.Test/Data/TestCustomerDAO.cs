@@ -4,18 +4,21 @@ using System.Linq;
 //
 using Data;
 using NUnit.Framework;
+using Spring.Core;
+using Spring.Data;
 using Spring.Context;
 using Spring.Context.Support;
 using Common.Logging;
 using Spring_NET_Ado.Entities;
-
+using System.Transactions;//另外加給Spring用
 namespace Data.Test.Data
 {
     [TestFixture]
     public class TestCustomerDAO
     {
         private IApplicationContext ctx;
-        private CustomerDAO customerDAO;
+        //private CustomerDAO customerDAO;
+        private IDAO<Customer, string> customerDAO;
         private static readonly ILog log = LogManager.GetLogger(typeof(TestCustomerDAO));
         private IDictionary<string, Customer> customerDic;
 
@@ -24,7 +27,7 @@ namespace Data.Test.Data
         public void InitContext()
         {
             this.ctx = ContextRegistry.GetContext();
-            this.customerDAO = ctx["customerDAO"] as CustomerDAO;
+            this.customerDAO = ctx["customerDAO"] as IDAO<Customer, string>;//CustomerDAO;
             this.customerDic = new Dictionary<string, Customer>();
             Customer customer = new Customer()
             {
@@ -160,6 +163,7 @@ namespace Data.Test.Data
         [TearDown]
         public void TearDown()
         {
+            if (this.customerDic != null)
             foreach (string cid in this.customerDic.Keys)
             {
                 if (this.customerDAO.Exist(cid))

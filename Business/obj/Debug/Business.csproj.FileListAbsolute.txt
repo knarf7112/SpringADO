@@ -1,0 +1,13 @@
+D:\git\Spring_NET_Ado\Business\bin\Debug\Business.dll
+D:\git\Spring_NET_Ado\Business\bin\Debug\Business.pdb
+D:\git\Spring_NET_Ado\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\git\Spring_NET_Ado\Business\obj\Debug\Business.dll
+D:\git\Spring_NET_Ado\Business\obj\Debug\Business.pdb
+D:\git\Spring_NET_Ado\Business\bin\Debug\Common.Logging.dll
+D:\git\Spring_NET_Ado\Business\bin\Debug\Data.dll
+D:\git\Spring_NET_Ado\Business\bin\Debug\Spring.Core.dll
+D:\git\Spring_NET_Ado\Business\bin\Debug\Spring.Data.dll
+D:\git\Spring_NET_Ado\Business\bin\Debug\Spring_NET_Ado.dll
+D:\git\Spring_NET_Ado\Business\bin\Debug\Data.pdb
+D:\git\Spring_NET_Ado\Business\bin\Debug\Spring_NET_Ado.pdb
+D:\git\Spring_NET_Ado\Business\bin\Debug\Spring.Aop.dll

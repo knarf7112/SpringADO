@@ -16,4 +16,6 @@ D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Spring_NET_Ado.dll
 D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Data.pdb
 D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Spring_NET_Ado.pdb
 D:\git\Spring_NET_Ado\Data.Test\bin\Debug\log4net.xml
+D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Business.dll
+D:\git\Spring_NET_Ado\Data.Test\bin\Debug\Business.pdb
 D:\git\Spring_NET_Ado\Data.Test\bin\Debug\App.config
