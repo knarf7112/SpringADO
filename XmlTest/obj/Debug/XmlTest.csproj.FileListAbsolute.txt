@@ -5,3 +5,4 @@ D:\git\Spring_NET_Ado\XmlTest\obj\Debug\XmlTest.exe
 D:\git\Spring_NET_Ado\XmlTest\obj\Debug\XmlTest.pdb
 D:\git\Spring_NET_Ado\XmlTest\bin\Debug\books.xml
 D:\git\Spring_NET_Ado\XmlTest\bin\Debug\Common.Logging.dll
+D:\git\Spring_NET_Ado\XmlTest\obj\Debug\XmlTest.csprojResolveAssemblyReference.cache
